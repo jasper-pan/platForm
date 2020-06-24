@@ -1,0 +1,25 @@
+<block wx:for="{{xuqiufabudan}}">
+<view class="toubu">
+	<view class="touzi">
+    <view style="width:94%;height:93rpx; margin-left: 3%;margin-right: 3%;">
+      <view class="lists">
+  <view bindtap="tiaozhuan3"  class="list">
+     <view class="list-1">
+                    <view class="list-4">{{item[8]}}</view>
+                    <view class="list-5">{{item[24]}}</view>
+                  </view>
+                <view class="list-1">
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                </view>
+                <view class="list-1">
+                  <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：{{item[6]}}</view>
+                  <view class="list-3" style=" font-size: 26rpx;">联系电话：{{item[7]}}</view>
+                </view>
+    </view>
+  </view>
+    </view>
+  </view>
+</view>
+</block>

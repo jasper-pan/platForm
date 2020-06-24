@@ -1,0 +1,32 @@
+<!--pages/my-fabu-gb/my-fabu-gb.wxml-->
+<view class="biejing">
+  <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">企业联系人</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+         <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">手机号码</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+         <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">电子邮箱</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+</view>
+<view style="width:100%;overflow: hidden; ">
+  <view style="width: 44%;float:left;overflow: hidden;">
+    <image src="../../image/交付撮合小程序-我要供应_03.png" style="width:50rpx;height:50rpx; float:right" ></image>
+  </view>
+  <view style="width:50%; float:left;overflow: hidden;">
+    <view style="float:left;margin-left:20rpx;color:#2b99ff;">
+      添加成交信息
+    </view>
+  </view>
+</view>
+        

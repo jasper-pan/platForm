@@ -1,0 +1,9 @@
+Page({
+  data:{},
+  methods:{},
+  fanhui(){
+    wx.navigateBack({
+      url:"../index/index"
+    })
+  }
+})

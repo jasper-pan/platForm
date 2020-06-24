@@ -1,0 +1,78 @@
+/* pages/fabu1/fabu1.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.xinxilist {
+	width: 100%;
+    border-top:2rpx solid #ccc;
+	height: auto;
+}
+.xinxi {
+	padding-left: 2%;
+	box-sizing: border-box;
+	width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+	height: 110rpx;
+	border-bottom: 1px solid #ccc;
+}
+.xinxi-zuo {
+	float: left;
+	height: 100%;
+	line-height:110rpx;
+	font-size: 30rpx;
+}
+.xinxi-you {
+	/* float: right; */
+	height: 100%;
+	/* margin-right: 3%; */
+	line-height: 110rpx;
+	color: #9c9898;
+  /* text-align: right; */
+  font-size: 28rpx;
+  /* width: 70%; */
+}
+.xuqiu1 {
+	width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+	height: auto;
+	margin-top: 90rpx;
+  font-size: 28rpx;
+}
+.xuqiu1-tou {
+	border-bottom: 1px solid #ccc;
+	height: 100rpx;
+	line-height: 100rpx;
+	font-size: 32rpx;
+	font-weight: 600;
+}
+.xuqiu1-miaoshu {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	border-bottom: 2rpx solid #ccc;
+}
+.xiangxi {
+	margin-bottom: 50rpx;
+  font-size: 56rrpx;
+  color: #9c9898;
+}
+.tijiao {
+	width: 100%;
+	height: 150rpx;
+	overflow: hidden;
+  text-align: center;
+}
+.tijiaobtn {
+	width: 165rpx;
+  height: 66rpx;
+	background-color: #2386ee;
+	color: #fff;
+	margin-left: 40%;
+	margin-top:54rpx;
+	line-height:65rpx;
+	text-align: center;
+	font-size: 34rpx;
+	border-radius: 37rpx;
+}

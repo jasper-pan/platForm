@@ -1,0 +1,102 @@
+/* pages/sosuo/sosuo.wxss */
+page{
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .sousuobei{
+            width: 100%;
+            height: 140rpx;
+            overflow: hidden;
+        }
+        .sosuo{
+            float: left;
+            width: 70%;
+            height: 70rpx;
+            margin-left: 66rpx;
+            margin-top: 50rpx;
+            line-height: 40rpx;
+            border-radius: 68rpx;
+            background-color: #dedede;
+            text-align: center;
+            border: 2rpx solid rgba(239, 240, 245, 1);
+            overflow: hidden;
+        }
+        .sosuotu{
+            width: 20%;
+            height: 100%;
+            float: left;
+        }
+        .tupianjuzh{
+            line-height: 90rpx;
+            text-align: center;
+        }
+        .inputk{
+            width: 77%;
+            height: 100%;
+            float: left;
+            line-height: 70rpx;
+        }
+        .inputk input{
+            border: 0;
+            outline: none;
+            background-color:#dedede;
+            font-size: 24rpx;
+        }
+        .border{
+            width: 100%;
+            height: auto;
+            margin-top: 14rpx;
+
+        }
+        .quxiao{
+            float: left;
+            width: 10%;
+            height: 70rpx;
+            margin-left: 36rpx;
+            margin-top: 50rpx;
+            line-height: 40rpx;
+        }
+        .quxiaoz p{
+            margin: 0;
+            line-height: 74rpx;
+            font-size: 28rpx;
+        }
+        .lishi{
+            margin-left: 6%;
+            margin-right: 6%;
+            height: 100rpx;
+            margin-top: 3%;
+        }
+        .solishi{
+            float: left;
+            font-size: 24rpx;
+        }
+        .qinglishi{
+            float: right;
+            font-size: 22rpx;
+        }
+        .lishianniu{
+            float: left;
+            margin-top: 5%;
+            width: 20%;
+            height: 66rpx;
+            line-height: 34rpx;
+            border-radius: 20rpx;
+            background-color: rgba(239, 240, 245, 1);
+            color: rgba(88, 88, 88, 1);
+            font-size: 24rpx;
+            text-align: center;
+            font-family: Arial;
+            border: 2rpx solid rgba(255, 0, 0, 0);
+        }
+        .lishianniu p{
+            margin: 0;
+            line-height: 70rpx;
+        }
+        .lishianniubei{
+            width: 100%;
+            height: 100%;
+        }
+        .sousuobei{
+            width: 100%;
+        }

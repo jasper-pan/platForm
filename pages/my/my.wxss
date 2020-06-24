@@ -1,0 +1,171 @@
+
+page  {
+    margin: 0 auto;
+    background-color: rgba(248, 248, 248, 1);
+}
+.topbeijing{
+            width: 100%;
+            height: 534rpx;
+            background-color :#007AFF
+            
+        }
+        .bianju{
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        .shezhi{
+            height: 60rpx;
+        }
+        .shezhi iamge{
+            width: 40rpx;
+            height: 40rpx;
+            float: right;
+        }
+        .shizhibei{
+            width: 100%;
+        }
+        .xiangkuang{
+            width: 17%;
+            float: left;
+        }
+        img{
+            width: 108rpx;
+            height: 108rpx;
+            border: 4rpx solid #fff;
+            border-radius: 50%;
+        }
+        p,span{
+            font-family: PingFangSC-bold;
+        }
+        .gongsiname{
+            font-size: 40rpx;
+            color: #fff;
+        }
+        .guanzhu{
+            font-size: 28rpx;
+            color: #fff;
+            border-right: 4rpx solid #fff;
+            float: left;
+            margin-top: 3%;
+        }
+        .fensi{
+            font-size: 28rpx;
+            color: #fff;
+            margin-top: 3%;
+        }
+        .tishi{
+            width: 100%;
+            height: 68rpx;
+            background-color: #FF706F;
+            border-radius: 12rpx;
+            margin-top: 4%;
+        }
+        .tishi span{
+            margin-left: 2%;
+            font-size: 24rpx;
+            color: #fff;
+            line-height: 68rpx;
+        }
+        .topg{
+            margin-top: 4%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .topyou{
+            float: left;
+            width: 70%;
+        }
+        .gzfs{
+            width: 100%;
+            overflow: hidden;
+        }
+        .gongsiname p{
+            margin: 0;
+        }
+        .wodejiaoyi{
+            width: 100%;
+            height: 252rpx;
+            background-color: #fff;
+            border-radius: 20rpx;
+        }
+        .jiaoyibianju{
+            margin-left: 3%;
+            margin-right: 3%;
+            position: relative;
+            top: -72rpx;
+        }
+        .wodejy{
+            width: 100%;
+            font-size: 32rpx;
+            margin-left: 3%;
+            margin-right: 3%;
+            padding-top: 1px;
+        }
+        .jiaoyizi{
+            color: #101010 ;
+        }
+        .jiaoyiminx{
+            width: 100%;
+            margin-left: 3%;
+            margin-right: 3%;
+            overflow: hidden;
+            padding-top: 5%;
+        }
+        .shuzi{
+            font-size: 60rpx;
+            font-family: PingFangSC-bold;
+            text-align: center;
+            margin: 0;
+        }
+        .shuzi1{
+            font-size: 26rpx;
+            text-align: center;
+            margin: 0;
+            color: #999898;
+        }
+        .jiaoyi1{
+            width: 31%;
+            float: left;
+        }
+        .tuijianbianju{
+            margin-left: 3%;
+            margin-right: 3%;
+            position: relative;
+            top: -54rpx;
+        }
+        .tuijianbeij{
+            width: 100%;
+            height: 356rpx;
+            background-color: #fff;
+            border-radius: 20rpx;
+        }
+        .wodejiaoy{
+            width: 100%;
+            font-size: 32rpx;
+            margin-left: 3%;
+            margin-right: 3%;
+            padding-top: 2rpx;
+        }
+        .wodeimfimg{
+            width: 52rpx;
+            height: 52rpx;
+            border-radius:0;
+        }
+        .wodep{
+            color: #101010;
+            text-align: center;
+            margin: 0;
+            font-size: 24rpx;
+        }
+        .button1{
+          width: 88rpx !important;
+          margin-right: auto;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-size: 23rpx;
+          padding: 8rpx;
+          text-align: center;
+          margin-top: 10rpx;
+          border-radius: 28rpx;
+          float: left;
+          color: #fff;
+        }

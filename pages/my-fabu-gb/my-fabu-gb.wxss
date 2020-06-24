@@ -1,0 +1,34 @@
+        .biejing{
+          width: 92%;
+          margin-left: 4%;
+          margin-right: 4%;
+          -moz-box-shadow: 2px 2px 5px #dedede;
+          -webkit-box-shadow: 2px 2px 5px #dedede;
+          box-shadow: 2px 2px 5px #dedede;
+          margin-top: 44rpx;
+          margin-bottom: 44rpx;
+          border-radius: 10rpx;
+        }
+        .inputsh{
+            height: 80rpx;
+            line-height: 80rpx;
+            border-bottom: 2rpx solid #EEEEEE;
+            overflow: hidden;
+            
+        }
+        .inputsh input{
+            border: 0;
+            line-height: 76rpx;
+            outline: none;
+            width: 60%;
+        }
+        input::placeholder {
+           text-align: right;
+        }
+        .mincheng{
+            width: 35%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+        }
+        

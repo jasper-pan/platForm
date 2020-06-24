@@ -1,0 +1,84 @@
+<view class="topbeijing">
+            <view class="bianju">
+                <view class="shezhi">
+                   
+                </view>
+                <view class="topg">
+                    <view class="xiangkuang">
+                        <image  src="{{userInfo.avatarUrl}}"  style="width: 108rpx;height: 108rpx;border: 4rpx solid #fff;border-radius: 50%;"></image>
+                    </view>
+                    <view class="topyou">
+                        <view class="gongsiname">
+                            <p >{{userInfo.nickName}}</p>
+                        </view>
+                        <view class="gzfs">
+                            <view class="guanzhu">
+                                <span>关注</span>
+                               
+                                <span style="margin-right: 10px;">0</span>
+                            </view>
+                            <view class="fensi">
+                                <span style="margin-left: 10px;">粉丝</span>
+                                <span>0</span>
+                            </view>
+                        </view>
+                        <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo"class="button1">登录</button >
+                        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">123</button>
+                    </view>
+                     
+                </view>
+                
+                <view class="tishi">
+                    <span>偏偏告诉你，实名认证后，更容易接单哦</span>
+                    <span style="float: right; margin-right: 2%;">></span>
+                </view>
+            </view>
+        </view>
+        <view class="jiaoyibianju">
+            <view class="wodejiaoyi">
+                <view class="wodejy">
+                    <p class="jiaoyizi">我的交易</p>
+                </view>
+                <view class="jiaoyiminx">
+                    <view class="jiaoyi1" bindtap="tiao" style="width: 23%;" >
+                        <view class="shuzi">5</view>
+                        <view class="shuzi1">我的发布</view>
+                    </view>
+                    <view class="jiaoyi1" bindtap="tiao1"  style="width: 23%;">
+                        <view class="shuzi">5</view>
+                        <view class="shuzi1">待确认</view>
+                    </view>
+                    <view class="jiaoyi1" bindtap="tiao2" style="width: 23%;">
+                        <view class="shuzi">5</view>
+                        <view class="shuzi1">我的订单</view>
+                    </view>
+                    <view class="jiaoyi1" bindtap="tiao3" style="width: 23%;">
+                        <view class="shuzi">5</view>
+                        <view class="shuzi1">我的收藏</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="tuijianbianju">
+            <view class="tuijianbeij">
+                <view class="wodejiaoy">
+                    <p style="float: left;">推荐工具</p>
+                    <p style="float:right ;margin-right: 6%;color: #999898;">更多></p>
+                </view>
+                <view class="jiaoyiminx">
+                    <view class="jiaoyi1" style="text-align: center;">
+                        <image src="../../image/交付撮合小程序-我的_21.png" alt="" class="wodeimfimg"></image>
+                        <view class="wodep">客服中心</view>
+                    </view>
+                    <view class="jiaoyi1" style="text-align: center;">
+                        <image src="../../image/交付撮合小程序-我的_18.png" alt="" class="wodeimfimg"></image>
+                        <view class="wodep">我的企业</view>
+                    </view>
+                    <view class="jiaoyi1" style="text-align: center;">
+                        <image src="../../image/交付撮合小程序-我的_15.png" alt="" class="wodeimfimg"></image>
+                        <view class="wodep">我的顾问</view>
+                    </view>
+
+                </view>
+            </view>
+        </view>

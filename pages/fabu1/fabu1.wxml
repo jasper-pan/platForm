@@ -1,0 +1,19 @@
+<view class="xinxilist">
+<view  class="tijiao" style="width: 92%;margin-left: 4%;margin-right: 4%;">
+      <view  bindtap="xuqiufabu" class="tijiaobtn" style="float: right;">保存</view>
+</view>
+<block wx:for="{{xuqiufabudan}}">
+    <view class="xinxi">
+    <view class="xinxi-zuo"></view>
+    <input type="text" placeholder="{{item.message}}"  class="xinxi-you" ></input> 
+  </view>
+</block>
+ 
+</view>
+
+
+<!-- <view  class="tijiao">
+      <view class="tijiaobtn" bindtap="xuqiufabu">提交</view>
+</view> -->
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<!-- <text>创建时间：{{filter.formatTime(item.creatTime, 'yyyy-MM-dd hh:mm:ss')}}</text> -->

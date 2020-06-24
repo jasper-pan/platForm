@@ -1,0 +1,75 @@
+/* pages/my-dingdan-pj/my-dingdan-pj.wxss */
+.beijing{
+width: 92%;
+margin-left: 4%;
+margin-right: 4%;
+margin-top: 44rpx;
+}
+
+.dibu-you {
+	float: right;
+	height: 100rpx;
+	width: 30%;
+	color: #fff;
+	background-color: #2386ee;
+	border-radius: 14rpx;
+	text-align: center;
+	line-height: 100rpx;
+	font-size: 36rpx;
+	margin-top: 20rpx;
+	margin-right: 2%;
+}
+/* 未选中的 背景样式 */
+radio .wx-radio-input{ 
+    height: 36rpx; 
+    width: 36rpx;
+    border-radius: 50%;
+    background: transparent;
+ }
+/* 选中后的 背景样式 */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+}
+/* 选中后的 对勾样式 */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;
+   width: 36rpx; 
+   height: 36rpx;
+   line-height: 36rpx;
+   text-align: center;
+   font-size:36rpx; 
+   color:#fff;
+   background: #33c9ff;
+   border: 6rpx solid #33c9ff;
+}
+.shuruku{
+  width: 92%;
+  height: 200rpx;
+  text-align: left;
+  margin-left: 4%;
+  margin-right: 4%;
+  background-color: #fff;
+  -moz-box-shadow: 2px 2px 5px #dedede;
+  -webkit-box-shadow: 2px 2px 5px #dedede;
+  box-shadow: 2px 2px 5px #dedede;
+  margin-top: 44rpx;
+  margin-bottom: 44rpx;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+}
+.dibu-you {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+	float: right;
+	height: 70rpx;
+	color: #fff;
+	background-color: #2386ee;
+	border-radius: 50rpx;
+	text-align: center;
+	line-height: 70rpx;
+	font-size: 36rpx;
+	margin-top: 140rpx;
+  margin-bottom: 44rpx;
+}
+

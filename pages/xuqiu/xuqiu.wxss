@@ -1,0 +1,207 @@
+/* pages/xuqiu/xuqiu.wxss */
+.dingbu {
+    width: 100%;
+    overflow: hidden;
+    background-color:#2386ee;
+    color:#fff;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+.jbxx{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-family: SourceHanSansSC-bold;
+  color: rgba(16, 16, 16, 1);
+  text-align: left;
+  justify-content:none;
+   font-size: 24rpx;display: flex;
+   height: 60rpx;
+   align-items: center;
+}
+.jiben {
+    float: left;
+    margin-left: 18%;
+    margin-top: 14%;
+    text-align: center;
+}
+.xiangxi {
+    float: left;
+    margin-left: 14%;
+    margin-top: 14%;
+    text-align: center;
+    border-bottom: 2px solid transparent; 
+}
+.on {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1%;
+}
+.tab {
+    width: 100%;
+}
+.tabs {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.tab p{
+    font-size: 14px;
+    color: #101010;
+}
+
+.dibu {
+	overflow: hidden;
+	width: 96%;
+	margin-left: 2%;
+	height: 75px;
+}
+.dibu-zuo {
+	float: left;
+	width: 15%;
+	height: 100px;
+	border-radius: 7px;
+	overflow: hidden;
+	margin-left: 2%;
+    text-align: center;
+}
+.dibu-zuo img {
+	width: 100%;
+	height: 100%;
+}
+.dibu-you {
+	float: right;
+	height: 40px;
+	width: 30%;
+	color: #fff;
+	background-color: #2386ee;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	margin-right: 2%;
+}
+.table {
+  margin-top: 1rem;
+}
+.tr {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+.td {
+  width:20%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  height: 100%;
+}
+.td-1 {
+ width: 19%;
+ justify-content: center;
+ color: #909090;
+ display: flex;
+ height: 80rpx;
+ align-items: center;
+ border-bottom: 1rpx solid #ddd;
+ font-size: 24rpx;
+}
+.td-2 {
+ width: 80%;
+ justify-content: center;
+ color: #909090;
+ display: flex;
+ height: 80rpx;
+ align-items: center;
+ border-bottom:  1rpx solid #ddd;
+ font-size: 24rpx
+}
+
+
+.th {
+ width: 19%;
+ justify-content: center;
+ color: #000;
+ display: flex;
+ height: 80rpx;
+ align-items: center;
+ border-bottom:  1rpx  solid #ddd;
+ font-size: 24rpx;
+}
+.th-2 {
+ width: 80%;
+ justify-content: center;
+ color: #909090;
+ display: flex;
+ height: 80rpx;
+ align-items: center;
+border-bottom:  1rpx  solid #ddd;
+ font-size: 24rpx
+}
+.toubu{
+	width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  -moz-box-shadow: 2px 2px 5px #dedede;
+  -webkit-box-shadow: 2px 2px 5px #dedede;
+  box-shadow: 2px 2px 5px #dedede;
+  margin-top: 44rpx;
+  margin-bottom: 44rpx;
+  border-radius: 10rpx;
+}
+.touzi {
+	font-size: 30rpx;
+	font-weight: 600;
+	line-height: 80rpx;
+	box-sizing: border-box;
+  color: #101010;
+  overflow: hidden;
+}
+.lists {
+	width: 96%;
+	margin-left: 2%;
+	height: auto;
+	
+}
+.list {
+	width: 100%;
+	margin-bottom: 20rpx;
+  margin-top: 30rpx;
+}
+.list-1 {
+	width: 100%;
+  font-size: 26rpx;
+}
+.list-2 {
+	float: left;
+	width: 150rpx;
+	height: 40rpx;
+	background-color: #f5f5f5;
+	line-height: 40rpx;
+	text-align: center;
+	color: #333;
+	margin-right: 10rpx;
+}
+.list-3 {
+	float: left;
+  color: #ccc;
+}
+.list-4{
+  float: left;
+  font-size: 32rpx;
+  font-family:PingFangSC-bold;
+  font-weight:600;
+  color:#101010;
+}
+.list-5{
+  float: right;
+  margin-right: 4%;
+  font-size: 26rpx;
+  color: #ccc;
+}
+.tabxq{
+  width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+}

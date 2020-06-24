@@ -1,0 +1,402 @@
+
+<view class="sytou">
+  <view class="xiantiao">
+    <view class="youcesuo">
+      <view class="topinput">
+        <view style='width:10%;display:inline-block;height:100%;float: left;margin-left: 10rpx;margin-top: 10rpx;'>
+          <image src='../../image/交付撮合小程序-首页-需求方_07.png' style="display:inline;" mode="aspectFit"></image>
+        </view>
+        <input bindtap="tiaozhuan" placeholder="请输入关键字" style="flot:left;"></input>
+      </view>
+    </view>
+  </view>
+  <!--pages/11111/11111.wxml-->
+
+  <view class='ticket-container'>
+    <scroll-view scroll-y bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <!--Tab布局-->
+      <view class='xinxi'>
+        <view class="xinxi-1 {{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
+          <text>25</text>
+          <text>需求</text>
+        </view>
+
+        <view class="xinxi-1 {{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
+          <text>80</text>
+          <text>服务提供方</text>
+        </view>
+        <view class="xinxi-1 {{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
+          <text>7</text>
+          <text>成功案例</text>
+        </view>
+        <view class="xinxi-1 {{3 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='3'>
+          <text>19</text>
+          <text>最近预览</text>
+        </view>
+      </view>
+
+      <!--内容布局-->
+      <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+        <!-- 需求方 -->
+        <swiper-item class='swiper'>
+          <view class="biaoqian">
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==0?'biaoti-2-on':''}}" bindtap="bbiaoqian1" data-index="0">{{tihuoWay}}</view>
+              <view class="select_box one0 {{biaoqian==0?'biaoti-2-on':''}}" data-index="0" wx:if="{{select1}}">
+                <block wx:for="{{xiangmujieduan}}">
+                  <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+                </block>
+              </view>
+            </view>
+            <view class="biaoqian-1">                        
+              <view class=" biaoqian-2 {{biaoqian==1?'biaoti-2-on':''}}" bindtap="bbiaoqian2" data-index="1">{{lingyu}}</view>
+              <view class="select_box one0 {{biaoqian==1?'biaoti-2-on':''}}" data-index="0" wx:if="{{select2}}">
+              <block wx:for="{{waibaofangshi}}">
+                <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+              </block>
+                
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==2?'biaoti-2-on':''}}" bindtap="bbiaoqian3" data-index="2">{{hangye}}</view>
+              <view class="select_box one0 {{biaoqian==2?'biaoti-2-on':''}}" data-index="0" wx:if="{{select3}}">
+               <block wx:for="{{chanpinleixing}}">
+                   <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view>
+               </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==3?'biaoti-2-on':''}}" bindtap="bbiaoqian4" data-index="3">{{xiangmu}}</view>
+              <view class="select_box one0 {{biaoqian==3?'biaoti-2-on':''}}" data-index="0" wx:if="{{select4}}">
+              <block wx:for="{{xiangmuleixing}}">
+                   <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view>
+               </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==4?'biaoti-2-on':''}}" bindtap="bbiaoqian5" data-index="4">{{gengduo}}</view>
+              <view class="select_box one0 {{biaoqian==4?'biaoti-2-on':''}}" data-index="0" wx:if="{{select5}}">
+                <view class="select_one" bindtap="mySelect" data-name="重庆分店">重庆分店</view>
+                <view class="select_one" bindtap="mySelect" data-name="东莞南城分店">东莞分店</view>
+                <view class="select_one" bindtap="mySelect" data-name="东莞总店">东莞总店</view>
+            </view>
+            </view>
+            <!-- 下拉需要显示的列表 -->
+            
+          </view>
+          <view  bindtap="btn" class="lists">
+            <view  class="list">
+              <view class="list-1">
+                <view class="list-4">深圳市模压科技有限公司</view>
+                <view class="list-5">2020-02-18</view>
+                <view class="list-5" bindtap="handleCollection" style='width:25rpx;height:25rpx;float: right;'wx:if="{{isCollected}}">
+                  <image style="width:100%;height:100%" src='../../image/shoucanghong.png'></image>
+                </view>
+                 <view class="list-5" bindtap="handleCollection" style='width:25rpx;height:25rpx;float: right;' wx:if="{{!isCollected}}">
+                  <image style="width:100%;height:100%" src='../../image/shoucanghui.png'></image>
+                </view>
+              </view>
+              <view class="list-1">
+                <view class="list-2">全渠道</view>
+                <view class="list-2">供应链</view>
+                <view class="list-2">全渠道</view>
+              </view>
+              <view class="list-1">
+                <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：张三</view>
+                <view class="list-3" style=" font-size: 26rpx;">联系电话：10000000000</view>
+              </view>
+            </view>
+          </view>
+          <!-- 遮罩层 -->
+          <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}" bindtap="ok"></view>
+          <!-- 弹出层 -->
+          <view class="modalDlg" wx:if="{{showModal}}">
+          <!-- 二维码或其他图片 -->
+              <text class="text">温馨提示</text>
+              <text class="text" style="color: #ccc;">当前用户不存在</text>
+          </view>
+          <block wx:for="{{xuqiufabudan}}">
+            <view bindtap="tiaozhuan3" class="lists">
+              <view class="list">
+                  <view class="list-1">
+                    <view class="list-4">{{item[8]}}</view>
+                    <view class="list-5">{{item[24]}}</view>
+                  </view>
+                <view class="list-1">
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                </view>
+                <view class="list-1">
+                  <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：{{item[6]}}</view>
+                  <view class="list-3" style=" font-size: 26rpx;">联系电话：{{item[7]}}</view>
+                </view>
+              </view>
+            </view>
+          </block>
+          
+          
+          
+        </swiper-item>
+        <!-- 需求方 -->
+
+        <!-- 服务提供方 -->
+        <swiper-item class='swiper' class='swiper'>
+          <view class="biaoqian">
+          <!--下拉框  -->
+            <!-- <view class='list-msg2' bindtap='bindShowMsg'>
+                <text>{{tihuoWay}}</text>
+            </view> -->
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==0?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="0">{{tihuoWay}}</view>
+            </view>
+            <view class="biaoqian-1">                        
+              <view class=" biaoqian-2 {{biaoqian==1?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="1">{{lingyu}}</view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==2?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="2">{{hangye}}</view>
+              <view class="select_box one0 {{biaoqian==2?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+              <block wx:for="{{suoshuhangye}}">
+                   <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view>
+               </block>
+               </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==3?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="3">{{xiangmu}}</view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==4?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="4">{{gengduo}}</view>
+            </view>
+            <!-- 下拉需要显示的列表 -->
+          </view>
+          <block wx:for="{{xuqiufabudan}}">
+            <view bindtap="tiaozhuan3" class="lists">
+              <view class="list">
+                  <view class="list-1">
+                    <view class="list-4">{{item[8]}}</view>
+                    <view class="list-5">{{item[24]}}</view>
+                  </view>
+                <view class="list-1">
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                </view>
+                <view class="list-1">
+                  <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：{{item[6]}}</view>
+                  <view class="list-3" style=" font-size: 26rpx;">联系电话：{{item[7]}}</view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </swiper-item>
+        <!-- 服务提供方 -->
+
+        <!-- 成功案列 -->
+        <swiper-item class='swiper' class='swiper'>
+          <view class="biaoqian">
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==0?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="0">{{tihuoWay}}</view>
+              <view class="select_box one0 {{biaoqian==0?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+                <block wx:for="{{xiangmujieduan}}">
+                <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+              </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">                        
+              <view class=" biaoqian-2 {{biaoqian==1?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="1">{{lingyu}}</view>
+              <view class="select_box one0 {{biaoqian==1?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+              <block wx:for="{{waibaofangshi}}">
+                <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+              </block>
+                
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==2?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="2">{{hangye}}</view>
+              <view class="select_box one0 {{biaoqian==2?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+               <block wx:for="{{chanpinleixing}}">
+                   <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view>
+               </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==3?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="3">{{xiangmu}}</view>
+              <view class="select_box one0 {{biaoqian==3?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+              <block wx:for="{{xiangmuleixing}}">
+                   <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view>
+               </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==4?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="4">{{gengduo}}</view>
+              <view class="select_box one0 {{biaoqian==4?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+                <view class="select_one" bindtap="mySelect" data-name="重庆分店">重庆分店</view>
+                <view class="select_one" bindtap="mySelect" data-name="东莞南城分店">东莞分店</view>
+                <view class="select_one" bindtap="mySelect" data-name="东莞总店">东莞总店</view>
+            </view>
+            </view>
+            <!-- 下拉需要显示的列表 -->
+            
+          </view>
+          <view  bindtap="btn" class="lists">
+            <view  class="list">
+              <view class="list-1">
+                <view class="list-4">深圳市模压科技有限公司</view>
+                <view class="list-5">2020-02-18</view>
+                <view class="list-5" bindtap="handleCollection" style='width:25rpx;height:25rpx;float: right;'wx:if="{{isCollected}}">
+                  <image style="width:100%;height:100%" src='../../image/shoucanghong.png'></image>
+                </view>
+                 <view class="list-5" bindtap="handleCollection" style='width:25rpx;height:25rpx;float: right;' wx:if="{{!isCollected}}">
+                  <image style="width:100%;height:100%" src='../../image/shoucanghui.png'></image>
+                </view>
+              </view>
+              <view class="list-1">
+                <view class="list-2">全渠道</view>
+                <view class="list-2">供应链</view>
+                <view class="list-2">全渠道</view>
+              </view>
+              <view class="list-1">
+                <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：张三</view>
+                <view class="list-3" style=" font-size: 26rpx;">联系电话：10000000000</view>
+              </view>
+            </view>
+          </view>
+          <!-- 遮罩层 -->
+          <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}" bindtap="ok"></view>
+          <!-- 弹出层 -->
+          <view class="modalDlg" wx:if="{{showModal}}">
+          <!-- 二维码或其他图片 -->
+              <text class="text">温馨提示</text>
+              <text class="text" style="color: #ccc;">当前用户不存在</text>
+          </view>
+          <block wx:for="{{xuqiufabudan}}">
+            <view bindtap="tiaozhuan3" class="lists">
+              <view class="list">
+                  <view class="list-1">
+                    <view class="list-4">{{item[8]}}</view>
+                    <view class="list-5">{{item[24]}}</view>
+                  </view>
+                <view class="list-1">
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                </view>
+                <view class="list-1">
+                  <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：{{item[6]}}</view>
+                  <view class="list-3" style=" font-size: 26rpx;">联系电话：{{item[7]}}</view>
+                </view>
+              </view>
+            </view>
+          </block>
+          
+          
+        </swiper-item>
+        <!-- 成功案列 -->
+
+        <!-- 最近预览 -->
+        <swiper-item class='swiper' class='swiper'>
+          <view class="biaoqian">
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==0?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="0">{{quanbu1}}</view>
+              <view class="select_box one0 {{biaoqian==0?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+              <block wx:for="{{chanpinleixing}}">
+                   <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view>
+               </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">                        
+              <view class=" biaoqian-2 {{biaoqian==1?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="1">{{lingyu1}}</view>
+              <view class="select_box one0 {{biaoqian==1?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+              <block wx:for="{{waibaofangshi}}">
+                <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+              </block>
+                
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==2?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="2">{{hangye1}}</view>
+              <view class="select_box one0 {{biaoqian==2?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+                <block wx:for="{{xiangmujieduan}}">
+                <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+              </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==3?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="3">{{xiangmujieduan1}}</view>
+              <view class="select_box one0 {{biaoqian==3?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+              <block wx:for="{{xiangmujieduan}}">
+                <view class="select_one" bindtap="mySelect" data-name="">{{item[1]}}</view> 
+              </block>
+            </view>
+            </view>
+            <view class="biaoqian-1">
+              <view class=" biaoqian-2 {{biaoqian==4?'biaoti-2-on':''}}" bindtap="bbiaoqian" data-index="4">{{gengduo1}}</view>
+              <view class="select_box one0 {{biaoqian==4?'biaoti-2-on':''}}" data-index="0" wx:if="{{select}}">
+                <view class="select_one" bindtap="mySelect" data-name="重庆分店">重庆分店</view>
+                <view class="select_one" bindtap="mySelect" data-name="东莞南城分店">东莞分店</view>
+                <view class="select_one" bindtap="mySelect" data-name="东莞总店">东莞总店</view>
+            </view>
+            </view>
+            <!-- 下拉需要显示的列表 -->
+            
+          </view>
+          <view  bindtap="btn" class="lists">
+            <view  class="list">
+              <view class="list-1">
+                <view class="list-4">深圳市模压科技有限公司</view>
+                <view class="list-5">2020-02-18</view>
+                <view class="list-5" bindtap="handleCollection" style='width:25rpx;height:25rpx;float: right;'wx:if="{{isCollected}}">
+                  <image style="width:100%;height:100%" src='../../image/shoucanghong.png'></image>
+                </view>
+                 <view class="list-5" bindtap="handleCollection" style='width:25rpx;height:25rpx;float: right;' wx:if="{{!isCollected}}">
+                  <image style="width:100%;height:100%" src='../../image/shoucanghui.png'></image>
+                </view>
+              </view>
+              <view class="list-1">
+                <view class="list-2">全渠道</view>
+                <view class="list-2">供应链</view>
+                <view class="list-2">全渠道</view>
+              </view>
+              <view class="list-1">
+                <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：张三</view>
+                <view class="list-3" style=" font-size: 26rpx;">联系电话：10000000000</view>
+              </view>
+            </view>
+          </view>
+          <!-- 遮罩层 -->
+          <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}" bindtap="ok"></view>
+          <!-- 弹出层 -->
+          <view class="modalDlg" wx:if="{{showModal}}">
+          <!-- 二维码或其他图片 -->
+              <text class="text">温馨提示</text>
+              <text class="text" style="color: #ccc;">当前用户不存在</text>
+          </view>
+          <block wx:for="{{xuqiufabudan}}">
+            <view bindtap="tiaozhuan3" class="lists">
+              <view class="list">
+                  <view class="list-1">
+                    <view class="list-4">{{item[8]}}</view>
+                    <view class="list-5">{{item[24]}}</view>
+                  </view>
+                <view class="list-1">
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                  <view class="list-2">{{item[4]}}</view>
+                </view>
+                <view class="list-1">
+                  <view class="list-3" style="margin-right: 60rpx; font-size: 26rpx;">联系人：{{item[6]}}</view>
+                  <view class="list-3" style=" font-size: 26rpx;">联系电话：{{item[7]}}</view>
+                </view>
+              </view>
+            </view>
+          </block>
+          
+          
+        </swiper-item>
+        <!-- 最近预览 -->
+      </swiper>
+    </scroll-view>
+  </view>
+
+
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-rate": "/vant-weapp/rate"
+  },
+  "navigationBarTitleText": "我的订单"
+}

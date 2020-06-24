@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-radio":"/vant-weapp/radio",
+    "van-radio-group": "/vant-weapp/radio-group",
+    "van-rate":"/vant-weapp/rate"
+  },
+  "navigationBarTitleText": "我的订单"
+}

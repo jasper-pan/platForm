@@ -1,0 +1,58 @@
+<!--pages/sosuo/sosuo.wxml-->
+<view class="sousuobei">
+        <view class="sosuo">
+            <view class="sosuotu">
+                <view class="tupianjuzh">
+                    <image src="../../image/交付撮合小程序-首页-需求方_07.png" alt="" style="width: 19px;height: 19px;"></image>
+                </view>
+            </view>
+            <view class="inputk">
+                <view class="border">
+                    <input type="text" placeholder="请输入关键字"></input>
+                </view>
+            </view>
+        </view>
+        <view class="quxiao">
+            <view class="quxiaoz" bindtap="fanhui">
+                <a href="#"><view style="line-height: 70rpx;">取消</view></a>
+            </view>
+        </view>
+    </view>
+    <view class="lishi">
+        <view style="width: 100%; height: 100%; overflow: hidden;">
+            <view class="solishi">
+                <view style="line-height: 70rpx;">搜索历史</view>
+            </view>
+            <view class="qinglishi">
+                <view style="line-height: 70rpx;">清空历史</view>
+            </view>
+        </view>
+        <view class="lishianniubei">
+            <view class="lishianniu">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+            <view class="lishianniu" style="margin-left:5%;">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+        </view>
+        <view class="rsouci" style="float: left;width: 100%;">
+            <view class="solishi" style="float: none;">
+                <view style="line-height: 70rpx;">热搜词</view>
+            </view>
+            <view class="lishianniu">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+            <view class="lishianniu" style="margin-left:5%;">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+            <view class="lishianniu" style="margin-left:5%;">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+            <view class="lishianniu" style="margin-left:5%;">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+            <view class="lishianniu">
+                <view style="line-height: 70rpx;"> 蓝图设计</view>
+            </view>
+        </view>
+    </view>

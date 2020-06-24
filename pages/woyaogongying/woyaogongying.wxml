@@ -1,0 +1,88 @@
+<!--pages/woyaogongying/woyaogongying.wxml-->
+<view class="shukuangbei " >
+        <view class="input1">
+            <view class="qiyexinxi">
+                <view style="float: left;margin-left: 2%;font-size: 30rpx;">企业信息</view>
+                <view style="color: #E51C23; font-size: 24rpx;float: left;" >(*必填)</view>
+            </view>
+        </view>
+        <view class="toubu" >
+            <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">企业名称</view >
+                    <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+        <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">企业联系人</view >
+                    <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+         <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">手机号码</view >
+                    <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+         <view class="inputsh">
+                <view class="mincheng">
+                    <view style="float: left;margin-left: 8%;font-size: 30rpx;">电子邮箱</view >
+                    <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+                </view >
+                <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+            </view>
+        </view>
+        <view class="input1">
+            <view class="qiyexinxi">
+                <view style="float: left;margin-left: 2%;font-size: 30rpx;">报价信息</view>
+                <view style="color: #E51C23; font-size: 24rpx;float: left;" >(*必填)</view>
+            </view>
+        </view>
+        <view class="toubu">
+          <view class="inputsh">
+          <view class="mincheng">
+            <view style="float: left;margin-left: 8%;font-size: 30rpx;">交付顾问</view >
+              <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+            </view >
+          <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+        </view>
+        <view class="inputsh">
+          <view class="mincheng">
+            <view style="float: left;margin-left: 8%;font-size: 30rpx;">开发顾问</view >
+              <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+            </view >
+          <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+        </view>
+        <view class="inputsh">
+          <view class="mincheng">
+              <view style="float: left;margin-left: 8%;font-size: 30rpx;">差旅</view >
+              <view  style="color: #E51C23; font-size: 30rpx;float: left;" >*</view >
+          </view >
+          <input type="text" placeholder="请输入" style="margin-top: 3%;text-align: right;font-size: 28rpx;"></input> 
+        </view>
+        </view>
+    </view>
+    <view class="tianjaibej toubu">
+        <view class="input1 nbj">
+            <view class="qiyexinxi wbj">
+                <view style="float: left;font-size: 30rpx;margin-left: 2%;">企业资质</view>
+                <view style="color: #E51C23; font-size: 24rpx;float: left;" >(必填)</view>
+            </view>
+            <view class="tianjia">
+              <view class="shangchuan">
+                <view class="tianjiakuang" style="float:left;width: 10%;">
+                    <image src="../../image/交付撮合小程序-我要供应_03.png" alt="" style="width:32rpx;height:32rpx;"></image>
+                </view>
+                <view style="margin-top: 60rpx; float:left; width:90%;font-size:28rpx; color:#47A6FF;">添加营业执照等信息</view>
+              </view>
+            </view>
+        </view>
+    </view>
+    <!-- 提交 -->
+	<view class="tijiao">
+		<view class="tijiaobtn">提交</view>
+	</view>

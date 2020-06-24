@@ -1,0 +1,43 @@
+<!--pages/xuqiu/xuqiu.wxml-->
+  <view class="dingbu">
+        <view bindtap="tiaozhuan2" style="float: left;margin-top: 14%;" >
+          <image src="../../image/交付撮合小程序-需求发布_03.png" style="width:25rpx;height: 25rpx;"></image>
+        </view>
+        <view id="tou1" class="jiben {{tab==0?'on':''}}" bindtap="bbiaoqian" data-index="0">基本信息</view>
+        <view id="tou2" class="xiangxi {{tab==1?'on':''}}" bindtap="bbiaoqian" data-index="1">详细信息</view>
+    </view>
+    <!-- tab栏 -->
+    <view class="tabs">
+        <view id="tab1" class="tab" wx:if="{{tab==0}}">
+           <view class="table">
+              <!-- <block wx:for="{{xuqiufabudan}}"> -->
+                  <view class="tr bg-w toubu">
+                    <view class="th">{{item[10]}}</view>
+                    <view class="th-2">{{item[10]}}</view>
+                  </view>
+               <!-- </block> -->
+              <view class=" " style="overflow: hidden;">
+                <view class="jbxx" >基本信息</view>
+              </view>
+              <view class="toubu" style="margin-top: 0;">
+                <block wx:for="{{xuqiufabudan}}">
+                  <view class="tr bg-w">
+                    <view class="th">{{item[10]}}</view>
+                    <view class="th-2">{{item[10]}}</view>
+                  </view>
+                </block>
+              </view>
+            </view>
+        </view>
+        <view id="tab2" class="tab tabxq" wx:if="{{tab==1}}">
+          <block wx:for="{{xuqiufabudan}}">
+             <view>
+                {{item[10]}}
+            </view>
+          </block>
+        </view>
+    </view>
+    <!-- dibu -->
+	<view class="dibu tabxq">
+        <view bindtap="tiaozhuan1" class="dibu-you">我要接单</view>
+    </view>

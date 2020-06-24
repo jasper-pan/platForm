@@ -1,0 +1,27 @@
+<!--pages/my-dingdan-xq/my-dingdan-xq.wxml-->
+<view style="margin-top: 44rpx;margin-bottom: 44rpx;">
+  <view style="text-align: center;font-size: 40rpx;">项目进度</view>
+  <van-rate  v-model="value" size="40" color="#ee0a24" void-icon="star" v-model="value" allow-half void-icon="star" void-color="#eee" style="text-align: center;" />
+</view>
+<view style="margin-top: 44rpx;margin-bottom: 44rpx;">
+  <view style="text-align: center;font-size: 40rpx;">文章规范性及完整性</view>
+  <van-rate  v-model="value" size="40" color="#ee0a24" void-icon="star" v-model="value" allow-half void-icon="star" void-color="#eee" style="text-align: center;" />
+</view>
+<view style="margin-top: 44rpx;margin-bottom: 44rpx;">
+  <view style="text-align: center;font-size: 40rpx;">顾问业务能力</view>
+  <van-rate  v-model="value" size="40" color="#ee0a24" void-icon="star" v-model="value" allow-half void-icon="star" void-color="#eee" style="text-align: center;" />
+</view>
+<view style="margin-top: 44rpx;margin-bottom: 44rpx;">
+  <view style="text-align: center;font-size: 40rpx;">客户满意度</view>
+  <van-rate  v-model="value" size="40" color="#ee0a24" void-icon="star" v-model="value" allow-half void-icon="star" void-color="#eee" style="text-align: center;" />
+</view>
+<view style="margin-top: 44rpx;margin-bottom: 44rpx;">
+  <view style="text-align: center;font-size: 40rpx;">综合评价得分</view>
+  <van-rate  v-model="value" size="40" color="#ee0a24" void-icon="star" v-model="value" allow-half void-icon="star" void-color="#eee" style="text-align: center;" />
+</view>
+<view style="overflow: hidden;width:92%;margin-left: 4%;margin-right: 4%;">
+  <view style="float: left;">服务评价</view>
+  <view style="float: left;font-size: 20rpx;color:#ee0a24;margin-top: 10rpx;">（非必填）</view>
+</view>
+<textarea class="shuruku" name="query" rows="6" tip="" placeholder="描述此次交易相关情况"></textarea>
+<view  class="dibu-you">提交</view>

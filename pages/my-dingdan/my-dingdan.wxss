@@ -1,0 +1,82 @@
+/* pages/my-dingdan/my-dingdan.wxss */
+/* pages/my-queren/my-queren.wxss */
+/* pages/my-fabu/my-fabu.wxss */
+ .toubu{
+	width: 92%;
+  margin-left: 4%;
+  margin-right: 4%;
+  -moz-box-shadow: 2px 2px 5px #dedede;
+  -webkit-box-shadow: 2px 2px 5px #dedede;
+  box-shadow: 2px 2px 5px #dedede;
+  margin-top: 44rpx;
+  margin-bottom: 44rpx;
+  border-radius: 10rpx;
+}
+.touzi {
+	font-size: 30rpx;
+	font-weight: 600;
+	line-height: 80rpx;
+	box-sizing: border-box;
+  color: #101010;
+  overflow: hidden;
+}
+.lists {
+	width: 96%;
+	margin-left: 2%;
+	height: auto;
+	
+}
+.list {
+	width: 100%;
+	margin-bottom: 20rpx;
+  margin-top: 30rpx;
+}
+.list-1 {
+	width: 100%;
+  font-size: 26rpx;
+}
+.list-2 {
+	float: left;
+	width: 150rpx;
+	height: 40rpx;
+	background-color: #f5f5f5;
+	line-height: 40rpx;
+	text-align: center;
+	color: #333;
+	margin-right: 10rpx;
+}
+.list-3 {
+	float: left;
+  color: #ccc;
+}
+.list-4{
+  float: left;
+  font-size: 32rpx;
+  font-family:PingFangSC-bold;
+  font-weight:600;
+  color:#101010;
+}
+.list-5{
+  float: right;
+  margin-right: 4%;
+  font-size: 26rpx;
+  color: #ccc;
+}
+.lianxi {
+	float: left;
+	margin-top: 20rpx;
+  margin-bottom: 44rpx;
+	margin-left: 4%;
+	width: 26%;
+	height: 60rpx;
+	text-align: center;
+	line-height: 60rpx;
+	background-color: #dedede;
+	border-radius: 30rpx;
+}
+.guanbi{
+  text-align: center;
+  margin-top: 20rpx;
+  padding-bottom: 44rpx;
+  color:#ccc;
+}

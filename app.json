@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/xuqiu/xuqiu",
+    "pages/sosuo/sosuo",
+    "pages/fabu1/fabu1",
+    "pages/my/my",
+    "pages/woyaogongying/woyaogongying",
+    "pages/qiyexiangqing/qiyexiangqing",
+    "pages/my-fabu/my-fabu",
+    "pages/my-fabu-gb/my-fabu-gb",
+    "pages/my-queren/my-queren",
+    "pages/my-dingdan/my-dingdan",
+    "pages/my-dingdan-pj/my-dingdan-pj",
+    "pages/my-dingdan-xq/my-dingdan-xq",
+    "pages/my-shoucang/my-shoucang"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#007AFF",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar" :{
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "list" :[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"image/交付撮合小程序-首页-需求方hui_10.png",
+        "selectedIconPath":"image/交付撮合小程序-首页-需求方_10.png"
+      },
+      {
+        "pagePath": "pages/fabu1/fabu1",
+        "text": "发布信息",
+        "iconPath": "image/交付撮合小程序-首页-需求方_12.png",
+        "selectedIconPath": "image/交付撮合小程序-首页-需求方_12.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/交付撮合小程序-首页-需求方_14.png",
+        "selectedIconPath": "image/交付撮合小程序-我的_27.png"
+      }
+    ]
+  }
+}

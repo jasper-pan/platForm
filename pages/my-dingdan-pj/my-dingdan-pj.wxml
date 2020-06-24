@@ -1,0 +1,71 @@
+<view class="beijing" style="overflow: hidden;" >
+  <view style="float: left;">
+    需求是否清晰
+  </view>
+
+  <radio-group class="radio" bindChange="updataRadio" style="float:right ;overflow: hidden;">
+    <view wx:for="{{loves}}" style="float: left;">
+      <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+    </view>
+  </radio-group>
+</view>
+<textarea class="shuruku" name="query" rows="6" tip="" placeholder="请填写原因"></textarea>
+
+<view class="beijing" style="overflow: hidden;" >
+  <view style="float: left;">
+    付款是否及时
+  </view>
+
+  <radio-group class="radio" bindChange="updataRadio" style="float:right ;overflow: hidden;">
+    <view wx:for="{{loves}}" style="float: left;">
+      <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+    </view>
+  </radio-group>
+</view>
+<view class="beijing" style="overflow: hidden;" >
+  <view style="float: left;">
+    过程管理是否规范
+  </view>
+
+  <radio-group class="radio" bindChange="updataRadio" style="float:right ;overflow: hidden;">
+    <view wx:for="{{loves}}" style="float: left;">
+      <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+    </view>
+  </radio-group>
+</view>
+<view class="beijing" style="overflow: hidden;" >
+  <view style="float: left;">
+    监控是否到位
+  </view>
+
+  <radio-group class="radio" bindChange="updataRadio" style="float:right ;overflow: hidden;">
+    <view wx:for="{{loves}}" style="float: left;">
+      <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+    </view>
+  </radio-group>
+</view>
+<view class="beijing" style="overflow: hidden;" >
+  <view style="float: left;">
+    制度执行是否到位
+  </view>
+
+  <radio-group class="radio" bindChange="updataRadio" style="float:right ;overflow: hidden;">
+    <view wx:for="{{loves}}" style="float: left;">
+      <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+    </view>
+  </radio-group>
+</view>
+<view class="beijing" style="overflow: hidden;" >
+  <view style="float: left;">
+    流程是否清晰
+  </view>
+
+  <radio-group class="radio" bindChange="updataRadio" style="float:right ;overflow: hidden;">
+    <view wx:for="{{loves}}" style="float: left;">
+      <radio value="{{item.id}}" checked="{{item.checked}}">{{item.name}}</radio>
+    </view>
+  </radio-group>
+</view>
+<view  class="dibu-you">提交</view>
+
+
